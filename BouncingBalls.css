@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 450px;
+    height: 650px;
+    position: relative;
+    margin-top: 5px;
+    box-shadow: 10px 10px 5px grey;
+    overflow: hidden;
+  }
+  
+  .brick {
+    color: white;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px grey;
+    position: absolute;
+    background: radial-gradient(
+      circle at 30% 30%,
+      rgba(255, 255, 255, 1),
+      rgba(120, 120, 120, 1)
+    );
+  }
+  
+  .brick1 {
+    top: 150px;
+    left: 60px;
+  }
+  
+  .brick2 {
+    top: 250px;
+    left: 120px;
+  }
+  
+  .brick3 {
+    top: 350px;
+    left: 180px;
+  }
+  
+  .brick4 {
+    top: 450px;
+    left: 240px;
+  }
+  
+  .brick5 {
+    top: 550px;
+    left: 300px;
+  }
+  
+  .ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, white, red);
+    position: absolute;
+    top: -30px;
+    left: 15px;
+     
+  }
+  .ball-1{
+    animation: FallingBall 8s ease-in-out infinite;
+    background: aquamarine;
+  }
+  .ball-2{
+    animation: FallingBall 9s ease-in-out infinite;
+    animation-delay: 1.5s;
+    background: teal;
+  }
+  .ball-3{
+    animation: FallingBall 10s ease-in-out infinite;
+    animation-delay: 2.5s;
+    background: purple;
+  }
+  .ball-4{
+    animation: FallingBall 11s ease-in-out infinite;
+    animation-delay: 3.5s;
+    background: rgb(148, 30, 97);
+  }
+  .ball-5{
+    animation: FallingBall 12s ease-in-out infinite;
+    animation-delay: 4.5s;
+    background:red;
+  }
+  .ball-6{
+    animation: FallingBall 13s ease-in-out infinite;
+    animation-delay: 5.5s;
+    background: gold;
+  }
+    @keyframes FallingBall{
+        0%{
+            top: 0px;
+            left: 15px;
+        }
+        10%{
+            top: 145px;
+            left: 65px;
+        }
+        20%{
+           top: 100px;
+           left: 110px;
+        }
+        30%{
+            top: 235px;
+            left: 125px; 
+        }
+        40%{
+            top: 200px;;
+            left: 160px;
+        }
+        50%{
+            top: 335px;
+            left: 185px;
+        }
+        60%{
+            top: 285px;
+            left: 230px;
+        }
+        70%{
+            top: 435px;
+            left: 275px;
+        }
+        80%{
+            top: 400px;
+            left: 280px;
+        }
+        90%{
+            top: 535px;
+            left: 305px;
+        }
+        100%{
+            top: 500px;
+            left: 350px;
+        }
+       
+    }  
